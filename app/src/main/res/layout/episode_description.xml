@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#000000">
+
+
+    
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        tools:src="@drawable/s01_ep01"
+        android:paddingTop="8dp"
+        android:scaleType="centerCrop"
+        android:id="@+id/episodeImage"/>
+
+    <TextView
+        android:id="@+id/episodeName"
+        tools:text="Summary"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:paddingTop="16dp"/>
+    <!-- Overview category -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- Label -->
+        <TextView
+            android:text="Directed by"
+            style="@style/CategoryStyle" />
+
+        <!-- Input fields -->
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:paddingLeft="4dp"
+            android:orientation="vertical"
+            tools:text="director"
+            android:id="@+id/director"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:fontFamily="sans-serif-light"
+            android:textColor="#ffffff"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- Label -->
+        <TextView
+            android:text="Written by"
+            style="@style/CategoryStyle"
+            />
+
+        <!-- Input fields -->
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:paddingLeft="4dp"
+            android:orientation="vertical"
+            tools:text="writer"
+            android:id="@+id/writer"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:fontFamily="sans-serif-light"
+            android:textColor="#ffffff"
+            android:ellipsize="none"
+            android:scrollHorizontally="false"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/container_measurement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- Label -->
+        <TextView
+            android:text="Aired On"
+            style="@style/CategoryStyle" />
+
+        <!-- Input fields -->
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:paddingLeft="4dp"
+            android:orientation="horizontal">
+
+            <!-- Weight field -->
+            <TextView
+                android:id="@+id/aired_on"
+                tools:text="date"
+                style="@style/EditorFieldStyle" />
+
+            <!-- Units for weight (kg) -->
+            <TextView
+                android:id="@+id/label_weight_units"
+                android:text="(U.K.)"
+                style="@style/EditorUnitsStyle"
+                />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- Label -->
+        <TextView
+            android:text="Running Time"
+            style="@style/CategoryStyle" />
+
+        <!-- Input fields -->
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:paddingLeft="4dp"
+            android:orientation="horizontal">
+
+            <!-- Weight field -->
+            <TextView
+                android:id="@+id/running_time"
+                tools:text="Time"
+                style="@style/EditorFieldStyle" />
+
+            <!-- Units for weight (kg) -->
+            <TextView
+                android:text="minutes"
+                style="@style/EditorUnitsStyle"
+                />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:text="Summary"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textAppearance="?android:textAppearanceSmall"
+        />
+    <TextView
+        android:id="@+id/summary"
+        tools:text="summary"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:padding="8dp"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:fontFamily="sans-serif-light"
+        android:ellipsize="none"
+        android:scrollHorizontally="false"
+        android:textColor="#ffffff"/>
+
+
+</LinearLayout>
+
+</ScrollView>

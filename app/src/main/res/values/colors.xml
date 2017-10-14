@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <!-- Accent color for UI controls like checkboxes and text fields -->
+    <color name="colorAccent">#64FFDA</color>
+    <color name="episodeName">#ffffff</color>
+    <color name="black">#000000</color>
+</resources>
